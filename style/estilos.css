@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+
+.tamanoImg{
+    width: 80%;
+}
+
+.margenes{
+    border: 2px solid rgb(182, 212, 47);
+    border-radius: 5px;
+}
+
+th{
+    color:rgb(182, 212, 47);
+}
+a{
+    text-decoration: none;
+}
+h2, p{
+    text-align:center;
+    background-color: rgb(182, 212, 47);
+}
+h6{
+    color:rgb(182, 212, 47);
+}
