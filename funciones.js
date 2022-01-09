@@ -222,7 +222,7 @@ const arraypinchos =[
         indice:'unopi',
         name:'BROCHETA DE CERDO',
         descripcion:"Brocheta de cerdo de 180 gr, arepa antioqueña y salsa BBQ",
-        precio: '$ 14.9'       
+        precio: '$ 7.9'       
     }
 ]  
 
@@ -231,7 +231,7 @@ const arraypostres =[
         indice:'unopos',
         name:'QUESADILLA',
         descripcion:"Tortilla bimbo, 100 gr de arequipe alpina, tres lonchas de queso tipo mozarela",
-        precio: '$ 14.9'       
+        precio: '$ 5.9'       
     }
 ]  
 
