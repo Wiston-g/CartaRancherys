@@ -124,7 +124,7 @@ const arrayHamburguesas =[
     {
         indice:'dieciocho',
         name:'MAXI MEGA POLLO' ,
-        descripcion:'Pollo de 140 gr, cerdo 160 gr, pan bimbo , arepa, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa' ,
+        descripcion:'Pollo de 170 gr, Carne 170 gr, pan bimbo , arepa, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa' ,
         precio:'$ 21.9' ,
     },
     {
