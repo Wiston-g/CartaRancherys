@@ -363,6 +363,18 @@ const arrayBebidas =[
         name:'REDBULL' ,
         descripcion:'REDBULL' ,
         precio:'$ 6.9' ,
+    },
+    {
+        indice:'onceb',
+        name:'BATIDOS NATURALES' ,
+        descripcion:'BATIDOS NATURALES EN  AGUA sabores: Mango, Mora, Maracuya, Lulo, Guanabana ' ,
+        precio:'$ 5.2' ,
+    },
+    {
+        indice:'doceb',
+        name:'BATIDOS NATURALES' ,
+        descripcion:'BATIDOS NATURALES EN  LECHE sabores: Mango, Mora, Maracuya, Lulo, Guanabana ' ,
+        precio:'$ 5.9' ,
     }
 ]
 
