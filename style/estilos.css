@@ -5,7 +5,9 @@ body{
 .tamanoImg{
     width: 80%;
 }
-
+.menu{
+    background-color: rgb(182, 212, 47);
+}
 .margenes{
     border: 2px solid rgb(182, 212, 47);
     border-radius: 5px;
