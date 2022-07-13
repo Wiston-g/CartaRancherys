@@ -107,7 +107,7 @@ const arrayHamburguesas =[
         indice:'quince',
         name:'MAXI SUPER' ,
         descripcion:'Doble carne 170 gr, pan bimbo , arepa, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa' ,
-        precio:'$ 13.9' ,
+        precio:'$ 18.9' ,
     },
     {
         indice:'dieciseis',
