@@ -23,6 +23,13 @@ h2, p{
     text-align:center;
     background-color: rgb(182, 212, 47);
 }
-h6{
+h3{
     color:rgb(182, 212, 47);
+    font-size: 1em;
+}
+.desplegable{
+    background-color: rgba(182, 212, 47, .3);
+    width: 20px;
+    height: 20px;
+    padding: 2px;
 }
