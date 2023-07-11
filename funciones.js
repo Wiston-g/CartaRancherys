@@ -337,7 +337,7 @@ const arrayAdiccionales =[
         indice:'sieteA',
         name:'SALSA EXCLUSIVAS' ,
         descripcion:'COPA DE 15gr' ,
-        precio:'$ 6.9' ,
+        precio:'$ 0.9' ,
     }
 ]
 
