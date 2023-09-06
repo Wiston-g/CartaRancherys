@@ -575,7 +575,7 @@ function imprimir(arreglo, tabla) {
         </td>
         <td>
             <div class="row  p-0">        
-                <div class="col-1 m-2"> <input type="number" min="0" class="btn-cant-car" id="cantidad${element.indice}"readonly onkeydown="return false;"> </div>
+                <div class="col-1 m-2"> <input type="number" min="0" class="btn-cant-car bg-light" id="cantidad${element.indice}"readonly onkeydown="return false;"> </div>
                 <div class="col-1">
                     <div class=" btn-action-car"> 
                         <button class="btn btn-sm btn-success botonmas " value="${element.indice}" id="mas${element.indice}"> + 
@@ -778,7 +778,7 @@ eventosDespuesDeCarga().then(() => {
                 .replace(/:/g, "%3A")
             }
             let url         = "https://wa.me/";
-            let numeroCel   = "+573017530981?text="
+            let numeroCel   = "+573202974075?text="
             let encriptado = encriptacion( stringPedido )
             window.location.href = url + numeroCel + encriptado;
             console.log(encriptacion( stringPedido ));
