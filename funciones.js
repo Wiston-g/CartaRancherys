@@ -24,6 +24,11 @@ const bodyModal             = document.getElementById('exampleModal');
 
 const btncarrtio            = document.getElementById('btn-carrito');
 
+const miVideo = document.getElementById('miVideo');
+
+const pausarVideoButton = document.getElementById('pausarVideo');
+
+
 
 const arraySalchipapas =[
     {
@@ -559,6 +564,17 @@ let stringPedido = '';
 
 let valorTotalPedido = 0;
 
+
+// Agrega un manejador de eventos al botón para pausar el video
+pausarVideoButton.addEventListener('click', function () {
+    if (!miVideo.paused) {
+
+        console.log('hol');
+        miVideo.pause();
+    }
+});
+
+
 function imprimir(arreglo, tabla) {
     arreglo.forEach(element => {
         tabla.innerHTML+=`<tr>
@@ -762,12 +778,12 @@ eventosDespuesDeCarga().then(() => {
             stringPedido = 'Hola mi pedido de hoy es: ';
             
             tarjetaPedido.forEach(element => {
-                let stringProducto = 'ufat' + element.cantidad + ' ' + element.name + ' Valor: ' + element.total + ' ' ;  
+                let stringProducto = 'ufat' + element.cantidad + ' ' + element.name + ' Valor: ' + element.total + ' ' ;
                 
                 stringPedido = stringPedido + stringProducto; 
             });
             
-            let stringTotal = 'ufat ufat ufat' + ' EL VALOR DEL PEDIDO ES: ' + valorTotalPedido;
+            let stringTotal = 'ufat ufat ufat' + ' EL VALOR DEL PEDIDO ES: ' + valorTotalPedido;  
             stringPedido = stringPedido + stringTotal;
             //console.log(stringPedido);
             
@@ -778,8 +794,8 @@ eventosDespuesDeCarga().then(() => {
                 .replace(/:/g, "%3A")
             }
             let url         = "https://wa.me/";
-            let numeroCel   = "+573202974075?text="
-            let encriptado = encriptacion( stringPedido )
+            let numeroCel   = "+573017530981?text="
+            let encriptado  = encriptacion( stringPedido )
             window.location.href = url + numeroCel + encriptado;
             console.log(encriptacion( stringPedido ));
         });
