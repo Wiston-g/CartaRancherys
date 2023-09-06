@@ -794,7 +794,7 @@ eventosDespuesDeCarga().then(() => {
                 .replace(/:/g, "%3A")
             }
             let url         = "https://wa.me/";
-            let numeroCel   = "+573017530981?text="
+            let numeroCel   = "+573202974075?text="
             let encriptado  = encriptacion( stringPedido )
             window.location.href = url + numeroCel + encriptado;
             console.log(encriptacion( stringPedido ));
