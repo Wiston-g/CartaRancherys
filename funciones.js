@@ -762,12 +762,12 @@ eventosDespuesDeCarga().then(() => {
             stringPedido = 'Hola mi pedido de hoy es: ';
             
             tarjetaPedido.forEach(element => {
-                let stringTotal = 'ufat ufat ufat' + ' EL VALOR DEL PEDIDO ES: ' + valorTotalPedido;  
+                let stringProducto = 'ufat' + element.cantidad + ' ' + element.name + ' Valor: ' + element.total + ' ' ;  
                 
                 stringPedido = stringPedido + stringProducto; 
             });
             
-            let stringTotal = 'ufat' + ' El valor del pedido es: ' + valorTotalPedido;  
+            let stringTotal = 'ufat ufat ufat' + ' EL VALOR DEL PEDIDO ES: ' + valorTotalPedido;
             stringPedido = stringPedido + stringTotal;
             //console.log(stringPedido);
             
