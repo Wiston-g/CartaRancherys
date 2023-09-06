@@ -8,6 +8,10 @@ body{
 .menu{
     background-color: rgb(182, 212, 47);
 }
+
+.negro{
+    color: black;
+}
 .margenes{
     border: 2px solid rgb(182, 212, 47);
     border-radius: 5px;
@@ -32,4 +36,30 @@ h3{
     width: 20px;
     height: 20px;
     padding: 2px;
+}
+
+.btn-car{
+    position: fixed;
+    bottom: 25px;
+    right: 40px;
+    z-index: 999;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+  
+.btn-action-car{
+    width: 40px;
+    padding: 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.btn-menos{
+    padding-left: .6rem;
+    padding-right: .6rem;
+}
+
+.btn-cant-car{
+    width: 30px;
+    
 }
