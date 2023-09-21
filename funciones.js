@@ -277,21 +277,21 @@ const arrayChoriqueta =[
 const arrayBurritos =[
     {
         indice:'unobu',
-        name:'CERDO',
+        name:'BURRITO DE CERDO',
         descripcion:"Brocheta de cerdo 180 gr, triple queso,papas cabello de angel vegetales frescos, guacamole y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
         precio: '$ 16.9',
         precioNum: 16900       
     },
     {
         indice:'dosbu',
-        name:'ATUN' ,
+        name:'BURRITO DE ATUN' ,
         descripcion:'atun 110 gr, doble queso, papas cabello de angel vegetales frescos, guacamole y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo' ,
         precio:'$ 16.9' ,
         precioNum: 16900
     },
     {
         indice:'tresbu',
-        name:'POLLO' ,
+        name:'BURRITO DE POLLO' ,
         descripcion:'6 lomitos de pollo apanado, doble queso, papas cabello de angel vegetales frescos, guacamole y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo' ,
         precio:'$ 16.9' ,
         precioNum: 16900
