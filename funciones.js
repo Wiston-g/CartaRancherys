@@ -1,4 +1,8 @@
+const tablaPicaranch        = document.getElementById('bodyTablePicaranch');
+
 const tablaSalchipapa       = document.getElementById('bodyTableSalchipapa');
+
+const tablaSalchipapaCrispy = document.getElementById('bodyTableSalchipapaCrispy');
 
 const tablaHamburguesa      = document.getElementById('bodyTableHamburguesa');
 
@@ -28,7 +32,29 @@ const miVideo = document.getElementById('miVideo');
 
 const pausarVideoButton = document.getElementById('pausarVideo');
 
-
+const arrayPicaranch =[
+    {
+        indice:'unopicaranch',
+        name:'PICARANCH CON TÉ',
+        descripcion:'Deliciosos bastoncitos de pura pechuga apanada, 160 gramos de papa a la francesa y tronquitos de exquisita salchicha crispy. Acompañada con un refrescante té y salsas de tu preferencia.',
+        precio: '$ 16.0',
+        precioNum: 16000
+    },
+    {
+        indice:'dospicaranch',
+        name:'PICARANCH CON GASEOSA' ,
+        descripcion:'Deliciosos bastoncitos de pura pechuga apanada, 160 gramos de papa a la francesa y tronquitos de exquisita salchicha crispy. Acompañada con una refrescante gaseosa y salsas de tu preferencia.' ,
+        precio:'$ 16.5' ,
+        precioNum: 16500
+    },
+    {
+        indice:'trespicaranch',
+        name:'PICARANCH CON HIT' ,
+        descripcion:'Deliciosos bastoncitos de pura pechuga apanada, 160 gramos de papa a la francesa y tronquitos de exquisita salchicha crispy. Acompañada con un refrescante jugo Hit y salsas de tu preferencia.' ,
+        precio:'$ 17.0' ,
+        precioNum: 17000
+    }
+]
 
 const arraySalchipapas =[
     {
@@ -59,6 +85,38 @@ const arraySalchipapas =[
         descripcion:'340gr de papa en cascos, 200gr de salchicha tipo ranchera, 2 huevo cocinados, 60gr de queso costeño, 280gr de guiso de la casa a base de carne desmechada, pollo, tocineta, cebolla caramelizada y exclusivas salsas de la casa' ,
         precio:'$ 29.9' ,
         precioNum: 29900
+    }
+]
+
+const arraySalchipapasCrispy =[
+    {
+        indice:'unosCrispy',
+        name:'SALCHIPAPA RAFITA CRISPY',
+        descripcion:"Lomitos de pollo apanado crispy, 170gr de papa en cascos, 100gr de salchicha tipo ranchera, huevo cocinado, 30gr de queso costeño y exclusivas salsas de la casa",
+        precio: '$ 14.9',
+        precioNum: 14900
+        
+    },
+    {
+        indice:'dossCrispy',
+        name:'SALCHIPAPA LUCHITO CRISPY' ,
+        descripcion:'Lomitos de pollo apanado crispy, 170gr de papa en cascos, 100gr de salchicha tipo ranchera, huevo cocinado, 30gr de queso costeño, 140gr de guiso de la casa a base de carne desmechada, pollo, tocineta, cebolla caramelizada y exclusivas salsas de la casa' ,
+        precio:'$ 18.9' ,
+        precioNum: 18900
+    },
+    {
+        indice:'tressCrispy',
+        name:'SALCHIPAPA RAFA CRISPY' ,
+        descripcion:'Lomitos de pollo apanado crispy, 340gr de papa en cascos, 200gr de salchicha tipo ranchera, 2 huevo cocinados, 60gr de queso costeño y exclusivas salsas de la casa' ,
+        precio:'$ 28.9' ,
+        precioNum: 28900
+    },
+    {
+        indice:'cuatrosCrispy',
+        name:'SALCHIPAPA LUCHO CRISPY' ,
+        descripcion:'Lomitos de pollo apanado crispy, 340gr de papa en cascos, 200gr de salchicha tipo ranchera, 2 huevo cocinados, 60gr de queso costeño, 280gr de guiso de la casa a base de carne desmechada, pollo, tocineta, cebolla caramelizada y exclusivas salsas de la casa' ,
+        precio:'$ 35.9' ,
+        precioNum: 35900
     }
 ]
 
@@ -611,7 +669,9 @@ function imprimir(arreglo, tabla) {
 }
 
 function llamdoDeTablas() {
+    imprimir(arrayPicaranch, tablaPicaranch);
     imprimir(arraySalchipapas, tablaSalchipapa);
+    imprimir(arraySalchipapasCrispy, tablaSalchipapaCrispy);
     imprimir(arrayHamburguesas, tablaHamburguesa);
     imprimir(arrayPerros, tablaperro);
     imprimir(arrayChoriqueta, tablaChoriqueta);
@@ -726,7 +786,9 @@ eventosDespuesDeCarga().then(() => {
         pedido.forEach(element => {
             //console.log(element.indice);
             
+            modificarInfoCarrito(arrayPicaranch, element.indice, element.cantidad);
             modificarInfoCarrito(arraySalchipapas, element.indice, element.cantidad);
+            modificarInfoCarrito(arraySalchipapasCrispy, element.indice, element.cantidad);
             modificarInfoCarrito(arrayHamburguesas, element.indice, element.cantidad);
             modificarInfoCarrito(arrayPerros, element.indice, element.cantidad);
             modificarInfoCarrito(arrayChoriqueta, element.indice, element.cantidad);
@@ -835,7 +897,7 @@ eventosDespuesDeCarga().then(() => {
             modal.hide();
             inputValue(itemCar);
             modal.show();
-            console.log(itemCar);
+            //console.log(itemCar);
         }
         //----------fin eliminar item del carrito
 
