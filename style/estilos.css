@@ -23,6 +23,18 @@ th{
 a{
     text-decoration: none;
 }
+.title{
+    text-align:center;
+    background-color: rgb(182, 212, 47);
+    color: black;
+}
+.title > a{
+    color: black;
+}
+.btn-title{
+    border: none;
+    background-color: rgb(182, 212, 47);
+}
 h2, p{
     text-align:center;
     background-color: rgb(182, 212, 47);
