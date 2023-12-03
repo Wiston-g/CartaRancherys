@@ -188,8 +188,8 @@ const arrayHamburguesas =[
         indice:'diez',
         name:'MAXI CERDO' ,
         descripcion:'Pernil de cerdo de 180 gr, carne 125 gr, pan bimbo , doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa' ,
-        precio: '$ 20.9' ,
-        precioNum: 20900
+        precio: '$ 22.9' ,
+        precioNum: 22900
     },
     {
         indice:'once',
