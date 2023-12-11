@@ -320,8 +320,8 @@ const arrayChoriqueta =[
         indice:'unoc',
         name:'CHORIQUETA',
         descripcion:"Chorizo campesino 100 gr, Arepa, Tocineta, queso y exclusivas salsas de la casa",
-        precio: '$ 8.9',
-        precioNum: 8900       
+        precio: '$ 7.9',
+        precioNum: 7900       
     },
     {
         indice:'dosc',
