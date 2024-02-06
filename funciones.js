@@ -33,13 +33,13 @@ const miVideo = document.getElementById('miVideo');
 const pausarVideoButton = document.getElementById('pausarVideo');
 
 const arrayPicaranch =[
-    {
+   /* {
         indice:'unopicaranch',
         name:'PICARANCH CON TÉ',
         descripcion:'Deliciosos bastoncitos de pura pechuga apanada, 160 gramos de papa a la francesa y tronquitos de exquisita salchicha crispy. Acompañada con un refrescante té y salsas de tu preferencia.',
         precio: '$ 16.0',
         precioNum: 16000
-    },
+    },*/
     {
         indice:'dospicaranch',
         name:'PICARANCH CON GASEOSA' ,
