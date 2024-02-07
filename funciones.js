@@ -28,10 +28,6 @@ const bodyModal             = document.getElementById('exampleModal');
 
 const btncarrtio            = document.getElementById('btn-carrito');
 
-const miVideo = document.getElementById('miVideo');
-
-const pausarVideoButton = document.getElementById('pausarVideo');
-
 const arrayPicaranch =[
    /* {
         indice:'unopicaranch',
@@ -641,17 +637,6 @@ const tarjetaPedido = []
 let stringPedido = '';
 
 let valorTotalPedido = 0;
-
-
-// Agrega un manejador de eventos al botón para pausar el video
-pausarVideoButton.addEventListener('click', function () {
-    if (!miVideo.paused) {
-
-        console.log('hol');
-        miVideo.pause();
-    }
-});
-
 
 function imprimir(arreglo, tabla) {
     arreglo.forEach(element => {
