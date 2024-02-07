@@ -1,3 +1,6 @@
+// Obtener la URL actual
+let currentUrl = window.location.href;
+
 const tablaPicaranch        = document.getElementById('bodyTablePicaranch');
 
 const tablaSalchipapa       = document.getElementById('bodyTableSalchipapa');
@@ -672,21 +675,51 @@ function imprimir(arreglo, tabla) {
 
     // Función que devuelve una promesa 
 }
+/**
+ * Todo:Lógica condicional basada en la URL 
+ */
+if (currentUrl.includes("picaranch.html")) {
+    await imprimir(arrayPicaranch, tablaPicaranch);
+} else if (currentUrl.includes("salchipapa.html")) {
+    await imprimir(arraySalchipapas, tablaSalchipapa);
+} else if (currentUrl.includes("salchipapa-crispy.html")) {
+    await imprimir(arraySalchipapasCrispy, tablaSalchipapaCrispy);
+}  else if (currentUrl.includes("picaranch.html")) {
+    await imprimir(arrayPicaranch, tablaPicaranch);
+} else if (currentUrl.includes("hamburguesa.html")) {
+    await imprimir(arrayHamburguesas, tablaHamburguesa)
+} else if (currentUrl.includes("perro.html")) {
+    await imprimir(arrayPerros, tablaperro);
+} else if (currentUrl.includes("choriqueta.html")) {
+    await imprimir(arrayChoriqueta, tablaChoriqueta);
+}  else if (currentUrl.includes("burrito.html")) {
+    await imprimir(arrayBurritos, tablaBurritos);
+} else if (currentUrl.includes("pincho.html")) {
+    await imprimir(arraypinchos, tablaPincho);
+} else if (currentUrl.includes("dias-felices.html")) {
+    await imprimir(arrayPromociones, tablaPromociones);
+} else if (currentUrl.includes("acompaniamientos.html")) {
+    await imprimir(arrayAcompañamientos, tablaAcompañamiento);
+}  else if (currentUrl.includes("adicionales.html")) {
+    await imprimir(arrayAdiccionales, tablaAdicionales);
+} else if (currentUrl.includes("bebidas.html")) {
+    await imprimir(arrayBebidas, tablaBebidas);
+}
 
-function llamdoDeTablas() {
-    imprimir(arrayPicaranch, tablaPicaranch);
-    imprimir(arraySalchipapas, tablaSalchipapa);
-    imprimir(arraySalchipapasCrispy, tablaSalchipapaCrispy);
-    imprimir(arrayHamburguesas, tablaHamburguesa);
-    imprimir(arrayPerros, tablaperro);
-    imprimir(arrayChoriqueta, tablaChoriqueta);
-    imprimir(arrayBurritos, tablaBurritos);
-    imprimir(arraypinchos, tablaPincho);
-    imprimir(arrayPromociones, tablaPromociones);
-    imprimir(arraypostres, tablaPostre);
-    imprimir(arrayAcompañamientos, tablaAcompañamiento);
-    imprimir(arrayAdiccionales, tablaAdicionales);
-    imprimir(arrayBebidas, tablaBebidas);
+async function llamdoDeTablas() {
+    await imprimir(arrayPicaranch, tablaPicaranch);
+    await imprimir(arraySalchipapas, tablaSalchipapa);
+    await imprimir(arraySalchipapasCrispy, tablaSalchipapaCrispy);
+    await imprimir(arrayHamburguesas, tablaHamburguesa);
+    await imprimir(arrayPerros, tablaperro);
+    await imprimir(arrayChoriqueta, tablaChoriqueta);
+    await imprimir(arrayBurritos, tablaBurritos);
+    await imprimir(arraypinchos, tablaPincho);
+    await imprimir(arrayPromociones, tablaPromociones);
+    await imprimir(arraypostres, tablaPostre);
+    await imprimir(arrayAcompañamientos, tablaAcompañamiento);
+    await imprimir(arrayAdiccionales, tablaAdicionales);
+    await imprimir(arrayBebidas, tablaBebidas);
 }
 window.onload=llamdoDeTablas();
 
@@ -789,8 +822,6 @@ eventosDespuesDeCarga().then(() => {
 
     btncarrtio.addEventListener('click', () => {
         pedido.forEach(element => {
-            //console.log(element.indice);
-            
             modificarInfoCarrito(arrayPicaranch, element.indice, element.cantidad);
             modificarInfoCarrito(arraySalchipapas, element.indice, element.cantidad);
             modificarInfoCarrito(arraySalchipapasCrispy, element.indice, element.cantidad);
@@ -800,11 +831,10 @@ eventosDespuesDeCarga().then(() => {
             modificarInfoCarrito(arrayBurritos, element.indice, element.cantidad);
             modificarInfoCarrito(arraypinchos, element.indice, element.cantidad);
             modificarInfoCarrito(arraypostres, element.indice, element.cantidad);
-            modificarInfoCarrito(arraypinchos, element.indice, element.cantidad);
+            modificarInfoCarrito(arrayPromociones, element.indice, element.cantidad);
             modificarInfoCarrito(arrayAdiccionales, element.indice, element.cantidad);
             modificarInfoCarrito(arrayBebidas, element.indice, element.cantidad);
             modificarInfoCarrito(arrayAcompañamientos, element.indice, element.cantidad);
-            
         });
         
 
