@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
 body{
     background-color: black;
 }
@@ -12,14 +14,11 @@ body{
 .negro{
     color: black;
 }
-.margenes{
-    border: 2px solid rgb(182, 212, 47);
-    border-radius: 5px;
-}
 
 th{
     color:rgb(182, 212, 47);
 }
+
 a{
     text-decoration: none;
 }
@@ -28,26 +27,20 @@ a{
     background-color: rgb(182, 212, 47);
     color: black;
 }
-.title > a{
+li > a{
     color: black;
 }
 .btn-title{
     border: none;
     background-color: rgb(182, 212, 47);
 }
-h2, p{
-    text-align:center;
-    background-color: rgb(182, 212, 47);
+.title-product {
+    padding-top: 5px;
+    font-family: "galada";
 }
 h3{
     color:rgb(182, 212, 47);
     font-size: 1em;
-}
-.desplegable{
-    background-color: rgba(182, 212, 47, .3);
-    width: 20px;
-    height: 20px;
-    padding: 2px;
 }
 
 .btn-car{
@@ -58,20 +51,43 @@ h3{
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-  
-.btn-action-car{
-    width: 40px;
-    padding: 0;
-    text-align: center;
-    font-size: 1.1rem;
+
+.btn-main{
+    position: fixed;
+    bottom: 25px;
+    left: 40px;
+    z-index: 999;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
+.boton-mas{
+    background-color: rgba(8, 114, 8, 0.2)!important;
+    margin-left: 3px;
+    font-weight: bolder !important;
+    color: green;
+}  
 .btn-menos{
     padding-left: .6rem;
     padding-right: .6rem;
+    font-weight: bolder !important;
+    background-color: rgba(212, 47, 47, 0.2)!important;
+    color: red;
 }
 
 .btn-cant-car{
     width: 30px;
-    
+}
+
+.card-product {
+    background-color: #212020;
+    border-right: 1px solid rgba(182, 212, 47, 0.2);
+    border-bottom: 1px solid rgba(182, 212, 47, 0.2);
+    text-align: center;
+    justify-content: center;
+}
+
+.text-card-product{
+    color:aliceblue;
+    background-color: rgba(32, 32, 32, 0.2) !important;
 }

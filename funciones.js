@@ -378,14 +378,14 @@ const arraypostres =[
 const arrayPromociones=[
     {
         indice:'unopr',
-        name:'HAMBURGUESAS',
+        name:'2 HAMBURGUESAS',
         descripcion:"2 hamburguesas de carne de res de 125 gr, pan bimbo , queso, jamón, cebolla, papas cabello de angel y exclusivas salsas de la casa",
         precio: '$ 20.0',
         precioNum: 20000
     },
     {
         indice:'dospr',
-        name:'PERROS MEDIANOS' ,
+        name:'2 PERROS MEDIANOS' ,
         descripcion:'2 perros con salchicha tipo ranchera americana de 80 gr, pan bimbo, cebolla, queso, papas cabello de angel y exclusivas salsas de la casa' ,
         precio: '$ 17.0' ,
         precioNum: 17000
@@ -643,34 +643,38 @@ let valorTotalPedido = 0;
 
 function imprimir(arreglo, tabla) {
     arreglo.forEach(element => {
-        tabla.innerHTML+=`<tr>
-        <td scope="row" >
+        tabla.innerHTML+=`<div class="card card-product mb-3">
+        <div scope="row" class="row  d-flex justify-content-center" >
             <a data-bs-toggle="collapse" href="#${element.indice}"  role="button" aria-expanded="false" aria-controls="collapseExample" >
-                <h3><span class="desplegable"><i class="bi bi-caret-down-fill"></i></span> ${element.name}</h3>
+                <span class="row text-card-product">
+                    <p class="col-1 bi bi-caret-down-fill"></p>
+                    <p class="col-8">${element.name}</p>
+                    <p class="col-3 ">${element.precio}</p>    
+                </span>
             </a>
             <div class="collapse" id="${element.indice}">
                 <div class="card card-body">${element.descripcion}</div>
             </div>
-        </td>
-        <td>
-            <h3>${element.precio}</h3>
-        </td>
-        <td>
-            <div class="row  p-0">        
-                <div class="col-1 m-2"> <input type="number" min="0" class="btn-cant-car bg-light" id="cantidad${element.indice}"readonly onkeydown="return false;"> </div>
-                <div class="col-1">
-                    <div class=" btn-action-car"> 
-                        <button class="btn btn-sm btn-success botonmas " value="${element.indice}" id="mas${element.indice}"> + 
-                        </button>
-                    </div>
-                    <div class=" btn-action-car"> 
-                        <button class="btn btn-sm btn-danger btn-menos" value="${element.indice}" id="menos${element.indice}"> - 
-                        </button>
-                    </div>
+        </div>
+        
+        <div class="container">
+            <div class="row  p-0 d-flex justify-content-center">   
+                <div class=" col-1 "> 
+                    <button class="btn btn-sm btn-danger btn-menos" value="${element.indice}" id="menos${element.indice}"> - 
+                    </button>
+                </div> 
+                <div class="col-1 "> 
+                    <input type="number" min="0" class="btn-cant-car bg-light" id="cantidad${element.indice}"readonly onkeydown="return false;"> 
                 </div>
+                <div class=" col-1 "> 
+                    <button class="btn btn-sm btn-success botonmas boton-mas" value="${element.indice}" id="mas${element.indice}"> + 
+                    </button>
+                </div>    
+                
+                
             </div>
-        </td>
-    </tr>`;
+        </div>
+    </div>`;
     });
 
     // Función que devuelve una promesa 
@@ -698,6 +702,8 @@ if (currentUrl.includes("picaranch.html")) {
     await imprimir(arraypinchos, tablaPincho);
 } else if (currentUrl.includes("dias-felices.html")) {
     await imprimir(arrayPromociones, tablaPromociones);
+} else if (currentUrl.includes("postres.html")) {
+    await imprimir(arraypostres, tablaPostre);
 } else if (currentUrl.includes("acompaniamientos.html")) {
     await imprimir(arrayAcompañamientos, tablaAcompañamiento);
 }  else if (currentUrl.includes("adicionales.html")) {
@@ -705,25 +711,6 @@ if (currentUrl.includes("picaranch.html")) {
 } else if (currentUrl.includes("bebidas.html")) {
     await imprimir(arrayBebidas, tablaBebidas);
 }
-
-async function llamdoDeTablas() {
-    await imprimir(arrayPicaranch, tablaPicaranch);
-    await imprimir(arraySalchipapas, tablaSalchipapa);
-    await imprimir(arraySalchipapasCrispy, tablaSalchipapaCrispy);
-    await imprimir(arrayHamburguesas, tablaHamburguesa);
-    await imprimir(arrayPerros, tablaperro);
-    await imprimir(arrayChoriqueta, tablaChoriqueta);
-    await imprimir(arrayBurritos, tablaBurritos);
-    await imprimir(arraypinchos, tablaPincho);
-    await imprimir(arrayPromociones, tablaPromociones);
-    await imprimir(arraypostres, tablaPostre);
-    await imprimir(arrayAcompañamientos, tablaAcompañamiento);
-    await imprimir(arrayAdiccionales, tablaAdicionales);
-    await imprimir(arrayBebidas, tablaBebidas);
-}
-window.onload=llamdoDeTablas();
-
-
 
 function eventosDespuesDeCarga() {
     return new Promise((resolve) => {
@@ -1047,8 +1034,4 @@ eventosDespuesDeCarga().then(() => {
 
 });
   
-
-
-
-
 
