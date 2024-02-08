@@ -32,13 +32,6 @@ const bodyModal             = document.getElementById('exampleModal');
 const btncarrtio            = document.getElementById('btn-carrito');
 
 const arrayPicaranch =[
-   /* {
-        indice:'unopicaranch',
-        name:'PICARANCH CON TÉ',
-        descripcion:'Deliciosos bastoncitos de pura pechuga apanada, 160 gramos de papa a la francesa y tronquitos de exquisita salchicha crispy. Acompañada con un refrescante té y salsas de tu preferencia.',
-        precio: '$ 16.0',
-        precioNum: 16000
-    },*/
     {
         indice:'dospicaranch',
         name:'PICARANCH CON GASEOSA' ,
@@ -676,7 +669,6 @@ function imprimir(arreglo, tabla) {
         </div>
     </div>`;
     });
-
     // Función que devuelve una promesa 
 }
 /**
@@ -725,6 +717,14 @@ eventosDespuesDeCarga().then(() => {
     const botonMas = document.querySelectorAll('.botonmas');
     const botonMenos = document.querySelectorAll('.btn-menos');
 
+    const totalKeys = localStorage.length;
+
+    // Iterar sobre todas las claves y mostrarlas
+    for (let i = 0; i < totalKeys; i++) {
+        let key = localStorage.key(i);
+        inputValue(key);
+    }   
+
     function sumarClic() {
         let productoCar = this.value; 
         let cantidad = 1;
@@ -736,28 +736,41 @@ eventosDespuesDeCarga().then(() => {
 
         if (pedido.length === 0) {
             pedido.push(sumarProducto);
+            let datosJSON = JSON.stringify(sumarProducto);    
+            // Guardar los datos en localStorage bajo la clave "usuario"
+            localStorage.setItem(sumarProducto.indice, datosJSON);
         } else {
             const objetoEncontrado = pedido.find(objeto => objeto.indice === sumarProducto.indice);
             if (objetoEncontrado) {
                 objetoEncontrado.cantidad = objetoEncontrado.cantidad + 1;
                 //console.log('Cantidad modificada con éxito.');
+                var datosRecuperadosJSON = localStorage.getItem(sumarProducto.indice);
+                // Convertir la cadena JSON de vuelta a un objeto JavaScript
+                var datosRecuperados = JSON.parse(datosRecuperadosJSON);
+                // Modificar la edad
+                datosRecuperados.cantidad = datosRecuperados.cantidad + 1; // Nueva edad
+                // Convertir los datos actualizados a una cadena JSON
+                var datosActualizadosJSON = JSON.stringify(datosRecuperados);
+
+                // Guardar los datos actualizados en localStorage bajo la misma clave "usuario"
+                localStorage.setItem(sumarProducto.indice, datosActualizadosJSON);
             } else {
                 pedido.push(sumarProducto);
                 //console.log('El objeto no se encontró en el array.');
+                let datosJSON = JSON.stringify(sumarProducto);    
+                // Guardar los datos en localStorage bajo la clave "usuario"
+                localStorage.setItem(sumarProducto.indice, datosJSON);
             }
             //console.log('El array no está vacío.');
         }
-
         inputValue(productoCar);
-        
         //console.log(pedido);
-
         //alert(`¡Hiciste clic en ${productoCar} !`);
     }
 
     function restarClic() {
         let productoCar = this.value; 
-        let cantidad = 1;
+        let cantidad = 0;
 
         let restarProducto = {
             indice: productoCar,
@@ -772,11 +785,28 @@ eventosDespuesDeCarga().then(() => {
             if (objetoEncontrado) {
                 objetoEncontrado.cantidad = objetoEncontrado.cantidad - 1;
 
+                var datosRecuperadosJSON = localStorage.getItem(restarProducto.indice);
+                //console.log(datosRecuperadosJSON);
+
+                // Convertir la cadena JSON de vuelta a un objeto JavaScript
+                var datosRecuperados = JSON.parse(datosRecuperadosJSON);
+
+                // Modificar la edad
+                datosRecuperados.cantidad = datosRecuperados.cantidad - 1; // Nueva edad
+
+                // Convertir los datos actualizados a una cadena JSON
+                var datosActualizadosJSON = JSON.stringify(datosRecuperados);
+
+                // Guardar los datos actualizados en localStorage bajo la misma clave "usuario"
+                localStorage.setItem(restarProducto.indice, datosActualizadosJSON);
+
                 const borrar = pedido.findIndex(objeto => objeto.indice === restarProducto.indice && 
                                                      objeto.cantidad ===  0 );
                 
                 if (borrar !== -1 ) {
                     pedido.splice(borrar, 1); 
+                    // Eliminar el elemento almacenado bajo la clave "usuario" del localStorage
+                    localStorage.removeItem(restarProducto.indice);
                 }                                                                              
                 //console.log('Cantidad restada con éxito.');
             }
@@ -797,17 +827,58 @@ eventosDespuesDeCarga().then(() => {
     function inputValue(productoCar) {
         let idInput         = 'cantidad' + productoCar;
         const muestCAntidad = document.getElementById(idInput);
-    
+        
+        if (muestCAntidad != null) {
+            let datosJSON = localStorage.getItem(productoCar);
+            let datos = JSON.parse(datosJSON);
+            let cantidad = parseInt(datos.cantidad);
+            if (cantidad) {
+                muestCAntidad.value = cantidad;    
+            }else{
+                muestCAntidad.value = '';
+            }
+            
+        }
+        
+        
+           /* 
         const objetoEncontrado = pedido.find(objeto => objeto.indice === productoCar);
         if (objetoEncontrado) {
             muestCAntidad.value = objetoEncontrado.cantidad;
         }else{
             muestCAntidad.value = '';
-        }
+        }*/
     }
  
 
     btncarrtio.addEventListener('click', () => {
+        // Obtener el número total de elementos almacenados en el localStorage
+        const totalKeys = localStorage.length;
+
+        // Iterar sobre todas las claves y mostrarlas
+        for (let i = 0; i < totalKeys; i++) {
+            let key = localStorage.key(i);
+            let datosJSON = localStorage.getItem(key);
+            let datos = JSON.parse(datosJSON);
+            let cantidad = datos.cantidad;
+            //console.log("Clave " + (i+1) + ": " + key);
+
+            modificarInfoCarrito(arrayPicaranch, key, cantidad);
+            modificarInfoCarrito(arraySalchipapas, key, cantidad);
+            modificarInfoCarrito(arraySalchipapasCrispy, key, cantidad);
+            modificarInfoCarrito(arrayHamburguesas, key, cantidad);
+            modificarInfoCarrito(arrayPerros, key, cantidad);
+            modificarInfoCarrito(arrayChoriqueta, key, cantidad);
+            modificarInfoCarrito(arrayBurritos, key, cantidad);
+            modificarInfoCarrito(arraypinchos, key, cantidad);
+            modificarInfoCarrito(arraypostres, key, cantidad);
+            modificarInfoCarrito(arrayPromociones, key, cantidad);
+            modificarInfoCarrito(arrayAdiccionales, key, cantidad);
+            modificarInfoCarrito(arrayBebidas, key, cantidad);
+            modificarInfoCarrito(arrayAcompañamientos, key, cantidad); 
+        }
+
+        /*
         pedido.forEach(element => {
             modificarInfoCarrito(arrayPicaranch, element.indice, element.cantidad);
             modificarInfoCarrito(arraySalchipapas, element.indice, element.cantidad);
@@ -822,7 +893,7 @@ eventosDespuesDeCarga().then(() => {
             modificarInfoCarrito(arrayAdiccionales, element.indice, element.cantidad);
             modificarInfoCarrito(arrayBebidas, element.indice, element.cantidad);
             modificarInfoCarrito(arrayAcompañamientos, element.indice, element.cantidad);
-        });
+        });*/
         
 
         const barraTotal = document.querySelector('.barratotal');
@@ -850,11 +921,7 @@ eventosDespuesDeCarga().then(() => {
             }
         }
         
-
-    
         //---------inicio mensaje
-
-       
 
         const btnEnviar = document.getElementById('enviar');
         btnEnviar.addEventListener('click', ()=>{
@@ -862,8 +929,7 @@ eventosDespuesDeCarga().then(() => {
             stringPedido = 'Hola mi pedido de hoy es: ';
             
             tarjetaPedido.forEach(element => {
-                let stringProducto = 'ufat' + element.cantidad + ' ' + element.name + ' Valor: ' + element.total + ' ' ;
-                
+                let stringProducto = 'ufat' + element.cantidad + ' ' + element.name + ' Valor: ' + element.total + ' ' ;             
                 stringPedido = stringPedido + stringProducto; 
             });
             
@@ -911,9 +977,11 @@ eventosDespuesDeCarga().then(() => {
 
             if (borrarItem !== -1 ) {
                 pedido.splice(borrarItem, 1); 
+                localStorage.removeItem(itemCar);
             } 
             if (borrarItem2 !== -1 ) {
                 tarjetaPedido.splice(borrarItem2, 1); 
+                localStorage.removeItem(itemCar);
             } 
 
             modal.hide();
@@ -922,10 +990,7 @@ eventosDespuesDeCarga().then(() => {
             //console.log(itemCar);
         }
         //----------fin eliminar item del carrito
-
-
     });
-
     //---------inicio cierra el modal del carrito
     const modalBodys = document.querySelector('.modal-body');    
         
