@@ -744,21 +744,15 @@ eventosDespuesDeCarga().then(() => {
             if (objetoEncontrado) {
                 objetoEncontrado.cantidad = objetoEncontrado.cantidad + 1;
                 //console.log('Cantidad modificada con éxito.');
-                var datosRecuperadosJSON = localStorage.getItem(sumarProducto.indice);
-                // Convertir la cadena JSON de vuelta a un objeto JavaScript
-                var datosRecuperados = JSON.parse(datosRecuperadosJSON);
-                // Modificar la edad
-                datosRecuperados.cantidad = datosRecuperados.cantidad + 1; // Nueva edad
-                // Convertir los datos actualizados a una cadena JSON
+                let datosRecuperadosJSON = localStorage.getItem(sumarProducto.indice);
+                let datosRecuperados = JSON.parse(datosRecuperadosJSON);
+                datosRecuperados.cantidad = datosRecuperados.cantidad + 1; // Nueva cantidad
                 var datosActualizadosJSON = JSON.stringify(datosRecuperados);
 
-                // Guardar los datos actualizados en localStorage bajo la misma clave "usuario"
                 localStorage.setItem(sumarProducto.indice, datosActualizadosJSON);
             } else {
                 pedido.push(sumarProducto);
-                //console.log('El objeto no se encontró en el array.');
-                let datosJSON = JSON.stringify(sumarProducto);    
-                // Guardar los datos en localStorage bajo la clave "usuario"
+                let datosJSON = JSON.stringify(sumarProducto);
                 localStorage.setItem(sumarProducto.indice, datosJSON);
             }
             //console.log('El array no está vacío.');
@@ -782,22 +776,16 @@ eventosDespuesDeCarga().then(() => {
         } else {
             const objetoEncontrado = pedido.find(objeto => objeto.indice === restarProducto.indice && 
                                                            objeto.cantidad >=  1 );
+                                                           
             if (objetoEncontrado) {
                 objetoEncontrado.cantidad = objetoEncontrado.cantidad - 1;
 
-                var datosRecuperadosJSON = localStorage.getItem(restarProducto.indice);
+                let datosRecuperadosJSON = localStorage.getItem(restarProducto.indice);
                 //console.log(datosRecuperadosJSON);
-
-                // Convertir la cadena JSON de vuelta a un objeto JavaScript
-                var datosRecuperados = JSON.parse(datosRecuperadosJSON);
-
-                // Modificar la edad
+                let datosRecuperados = JSON.parse(datosRecuperadosJSON);
                 datosRecuperados.cantidad = datosRecuperados.cantidad - 1; // Nueva edad
+                let datosActualizadosJSON = JSON.stringify(datosRecuperados);
 
-                // Convertir los datos actualizados a una cadena JSON
-                var datosActualizadosJSON = JSON.stringify(datosRecuperados);
-
-                // Guardar los datos actualizados en localStorage bajo la misma clave "usuario"
                 localStorage.setItem(restarProducto.indice, datosActualizadosJSON);
 
                 const borrar = pedido.findIndex(objeto => objeto.indice === restarProducto.indice && 
@@ -805,12 +793,12 @@ eventosDespuesDeCarga().then(() => {
                 
                 if (borrar !== -1 ) {
                     pedido.splice(borrar, 1); 
-                    // Eliminar el elemento almacenado bajo la clave "usuario" del localStorage
                     localStorage.removeItem(restarProducto.indice);
                 }                                                                              
                 //console.log('Cantidad restada con éxito.');
             }
         }
+
         inputValue(productoCar);
         //console.log(pedido);
     }
@@ -831,23 +819,19 @@ eventosDespuesDeCarga().then(() => {
         if (muestCAntidad != null) {
             let datosJSON = localStorage.getItem(productoCar);
             let datos = JSON.parse(datosJSON);
-            let cantidad = parseInt(datos.cantidad);
-            if (cantidad) {
-                muestCAntidad.value = cantidad;    
-            }else{
-                muestCAntidad.value = '';
-            }
             
+            //console.log(datos);
+            if (datos == null) {
+                muestCAntidad.value = "";
+            }else{
+                let cantidad = parseInt(datos.cantidad);
+                if (cantidad) {
+                    muestCAntidad.value = cantidad;    
+                }else{
+                    muestCAntidad.value = '';
+                }
+            }
         }
-        
-        
-           /* 
-        const objetoEncontrado = pedido.find(objeto => objeto.indice === productoCar);
-        if (objetoEncontrado) {
-            muestCAntidad.value = objetoEncontrado.cantidad;
-        }else{
-            muestCAntidad.value = '';
-        }*/
     }
  
 
@@ -877,23 +861,6 @@ eventosDespuesDeCarga().then(() => {
             modificarInfoCarrito(arrayBebidas, key, cantidad);
             modificarInfoCarrito(arrayAcompañamientos, key, cantidad); 
         }
-
-        /*
-        pedido.forEach(element => {
-            modificarInfoCarrito(arrayPicaranch, element.indice, element.cantidad);
-            modificarInfoCarrito(arraySalchipapas, element.indice, element.cantidad);
-            modificarInfoCarrito(arraySalchipapasCrispy, element.indice, element.cantidad);
-            modificarInfoCarrito(arrayHamburguesas, element.indice, element.cantidad);
-            modificarInfoCarrito(arrayPerros, element.indice, element.cantidad);
-            modificarInfoCarrito(arrayChoriqueta, element.indice, element.cantidad);
-            modificarInfoCarrito(arrayBurritos, element.indice, element.cantidad);
-            modificarInfoCarrito(arraypinchos, element.indice, element.cantidad);
-            modificarInfoCarrito(arraypostres, element.indice, element.cantidad);
-            modificarInfoCarrito(arrayPromociones, element.indice, element.cantidad);
-            modificarInfoCarrito(arrayAdiccionales, element.indice, element.cantidad);
-            modificarInfoCarrito(arrayBebidas, element.indice, element.cantidad);
-            modificarInfoCarrito(arrayAcompañamientos, element.indice, element.cantidad);
-        });*/
         
 
         const barraTotal = document.querySelector('.barratotal');
@@ -1082,7 +1049,11 @@ eventosDespuesDeCarga().then(() => {
             let indicePro = productoinfo.indice;
             
             if (indicePro == indice) {
+                console.log(tarjetaPedido);
+                //const objetoEncontrado = localStorage.getItem(indicePro);
+                //console.log(objetoEncontrado);
                 const objetoEncontrado = tarjetaPedido.find(objeto => objeto.indice === indicePro );
+                console.log('titi  '+objetoEncontrado);
                 if (!objetoEncontrado) {
                     productoinfo.cantidad = cantidad;
                     productoinfo.total    = productoinfo.precioNum * cantidad;
