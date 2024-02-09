@@ -718,11 +718,18 @@ eventosDespuesDeCarga().then(() => {
     const botonMenos = document.querySelectorAll('.btn-menos');
 
     const totalKeys = localStorage.length;
-
     // Iterar sobre todas las claves y mostrarlas
     for (let i = 0; i < totalKeys; i++) {
         let key = localStorage.key(i);
         inputValue(key);
+        let datosRecuperadosJSON = localStorage.getItem(key);
+        let datosRecuperados = JSON.parse(datosRecuperadosJSON);
+
+        let recuperarPedido = {
+            indice: datosRecuperados.indice,
+            cantidad: datosRecuperados.cantidad
+        }
+        pedido.push(recuperarPedido);
     }   
 
     function sumarClic() {
@@ -733,6 +740,8 @@ eventosDespuesDeCarga().then(() => {
             indice: productoCar,
             cantidad: cantidad
         }
+    
+        console.log(pedido);
 
         if (pedido.length === 0) {
             pedido.push(sumarProducto);
@@ -915,6 +924,8 @@ eventosDespuesDeCarga().then(() => {
             let encriptado  = encriptacion( stringPedido )
             window.location.href = url + numeroCel + encriptado;
             console.log(encriptacion( stringPedido ));
+            localStorage.clear();
+
         });
         //---------fin    mensaje
 
@@ -1049,11 +1060,9 @@ eventosDespuesDeCarga().then(() => {
             let indicePro = productoinfo.indice;
             
             if (indicePro == indice) {
-                console.log(tarjetaPedido);
                 //const objetoEncontrado = localStorage.getItem(indicePro);
                 //console.log(objetoEncontrado);
                 const objetoEncontrado = tarjetaPedido.find(objeto => objeto.indice === indicePro );
-                console.log('titi  '+objetoEncontrado);
                 if (!objetoEncontrado) {
                     productoinfo.cantidad = cantidad;
                     productoinfo.total    = productoinfo.precioNum * cantidad;
