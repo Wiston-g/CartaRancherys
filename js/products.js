@@ -328,7 +328,7 @@ export const products = {
       indice: "unobu",
       name: "BURRITO DE CERDO",
       descripcion:
-        "Brocheta de cerdo 180 gr, triple queso,papas cabello de angel vegetales frescos, guacamole y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
+        "Brocheta de cerdo 180 gr, triple queso,papas cabello de angel vegetales frescos y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
       precio: "$ 17.9",
       precioNum: 17900,
     },
@@ -336,7 +336,7 @@ export const products = {
       indice: "dosbu",
       name: "BURRITO DE ATUN",
       descripcion:
-        "atun 110 gr, doble queso, papas cabello de angel vegetales frescos, guacamole y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
+        "atun 110 gr, doble queso, papas cabello de angel vegetales frescos y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
       precio: "$ 17.9",
       precioNum: 17900,
     },
@@ -344,7 +344,7 @@ export const products = {
       indice: "tresbu",
       name: "BURRITO DE POLLO",
       descripcion:
-        "6 lomitos de pollo apanado, doble queso, papas cabello de angel vegetales frescos, guacamole y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
+        "6 lomitos de pollo apanado, doble queso, papas cabello de angel vegetales frescos y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
       precio: "$ 17.9",
       precioNum: 17900,
     },
