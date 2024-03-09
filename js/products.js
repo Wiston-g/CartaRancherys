@@ -332,14 +332,14 @@ export const products = {
       precio: "$ 17.9",
       precioNum: 17900,
     },
-    {
+    /*{
       indice: "dosbu",
       name: "BURRITO DE ATUN",
       descripcion:
         "atun 110 gr, doble queso, papas cabello de angel vegetales frescos, guacamole y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
       precio: "$ 17.9",
       precioNum: 17900,
-    },
+    },*/
     {
       indice: "tresbu",
       name: "BURRITO DE POLLO",
