@@ -324,22 +324,22 @@ export const products = {
     },
   ],
   burritos: [
-    {
+   /* {
       indice: "unobu",
       name: "BURRITO DE CERDO",
       descripcion:
         "Brocheta de cerdo 180 gr, triple queso,papas cabello de angel vegetales frescos y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
       precio: "$ 17.9",
       precioNum: 17900,
-    },
-    /*{
+    },*/
+    {
       indice: "dosbu",
       name: "BURRITO DE ATUN",
       descripcion:
         "atun 110 gr, doble queso, papas cabello de angel vegetales frescos y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
       precio: "$ 17.9",
       precioNum: 17900,
-    },*/
+    },
     {
       indice: "tresbu",
       name: "BURRITO DE POLLO",
