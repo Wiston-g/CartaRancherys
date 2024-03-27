@@ -352,8 +352,8 @@ export const products = {
   pinchos: [
     {
       indice: "unopi",
-      name: "BROCHETA DE CERDO",
-      descripcion: "Brocheta de cerdo de 180 gr, arepa antioqueña y salsa BBQ",
+      name: "CHULETICAS DE CERDO",
+      descripcion: "Chuletas de cerdo de cerdo de 200 gr, arepa antioqueña y salsa BBQ",
       precio: "$ 11.9",
       precioNum: 11900,
     },
