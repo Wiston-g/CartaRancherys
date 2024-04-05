@@ -20,7 +20,7 @@ export const products = {
   salchipapas: [
     {
       indice: "unos",
-      name: "SALCHIPAPA RAFITA",
+      name: "SALCHIPAPA RAFITA <br> Personal",
       descripcion:
         "170gr de papa en cascos, 100gr de salchicha tipo ranchera, huevo cocinado, 30gr de queso costeño y exclusivas salsas de la casa",
       precio: "$ 12.9",
@@ -28,7 +28,7 @@ export const products = {
     },
     {
       indice: "doss",
-      name: "SALCHIPAPA LUCHITO",
+      name: "SALCHIPAPA LUCHITO <br> Personal",
       descripcion:
         "170gr de papa en cascos, 100gr de salchicha tipo ranchera, huevo cocinado, 30gr de queso costeño, 140gr de guiso de la casa a base de carne desmechada, pollo, tocineta, cebolla caramelizada y exclusivas salsas de la casa",
       precio: "$ 16.9",
@@ -54,7 +54,7 @@ export const products = {
   salchipapasCrispy: [
     {
       indice: "unosCrispy",
-      name: "SALCHIPAPA RAFITA CRISPY",
+      name: "SALCHIPAPA RAFITA CRISPY <br> Personal",
       descripcion:
         "Lomitos de pollo apanado crispy, 170gr de papa en cascos, 100gr de salchicha tipo ranchera, huevo cocinado, 30gr de queso costeño y exclusivas salsas de la casa",
       precio: "$ 15.9",
@@ -62,7 +62,7 @@ export const products = {
     },
     {
       indice: "dossCrispy",
-      name: "SALCHIPAPA LUCHITO CRISPY",
+      name: "SALCHIPAPA LUCHITO CRISPY <br> Personal",
       descripcion:
         "Lomitos de pollo apanado crispy, 170gr de papa en cascos, 100gr de salchicha tipo ranchera, huevo cocinado, 30gr de queso costeño, 140gr de guiso de la casa a base de carne desmechada, pollo, tocineta, cebolla caramelizada y exclusivas salsas de la casa",
       precio: "$ 19.9",
@@ -406,15 +406,15 @@ export const products = {
       indice: "dosA",
       name: "QUESO",
       descripcion: "QUESO",
-      precio: "$ 2.5",
-      precioNum: 2500,
+      precio: "$ 1.5",
+      precioNum: 1500,
     },
     {
       indice: "tresA",
       name: "JAMON",
       descripcion: "JAMON",
-      precio: "$ 2.5",
-      precioNum: 2500,
+      precio: "$ 1.5",
+      precioNum: 1500,
     },
     {
       indice: "cuatroA",
