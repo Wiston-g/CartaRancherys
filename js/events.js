@@ -1,46 +1,17 @@
 import { products } from "./products.js";
+import { Message } from "./message.js";
 
 export async function eventsDom() {
   // Obtener la URL actual
   let currentUrl = window.location.href;
-
-  const tablaPicaranch        = document.getElementById('bodyTablePicaranch');
-
-  const tablaSalchipapa       = document.getElementById('bodyTableSalchipapa');
-
-  const tablaSalchipapaCrispy = document.getElementById('bodyTableSalchipapaCrispy');
-
-  const tablaHamburguesa      = document.getElementById('bodyTableHamburguesa');
-
-  const tablaperro            = document.getElementById('bodyTablePerros')
-
-  const tablaChoriqueta       = document.getElementById('bodyTableChoriqueta');
-
-  const tablaBurritos         = document.getElementById('bodyTableBurritos');
-
-  const tablaPincho           = document.getElementById('bodyTablePincho');
-
-  const tablaPromociones      = document.getElementById('bodyTablePromociones');
-
-  const tablaPostre           = document.getElementById('bodyTablePostres');
-
-  const tablaAcompañamiento   = document.getElementById('bodyTableAcompañamiento');
-
-  const tablaAdicionales      = document.getElementById('bodyTableAdicionales');
-
-  const tablaBebidas          = document.getElementById('bodyTableBebidas');
-
-  const bodyModal             = document.getElementById('exampleModal');
-
-  const btncarrtio            = document.getElementById('btn-carrito');
-
-  const pedido = []
-
-  const tarjetaPedido = []
-
-  let stringPedido = '';
-
   let valorTotalPedido = 0;
+
+  const tablaProductos = document.getElementById('bodyTableProducts');
+  const bodyModal      = document.getElementById('exampleModal');
+  const btncarrtio     = document.getElementById('btn-carrito');
+  const pedido         = []
+  const tarjetaPedido  = []
+
 
   function imprimir(arreglo, tabla) {
     arreglo.forEach(element => {
@@ -77,7 +48,6 @@ export async function eventsDom() {
         </div>
     </div>`;
     });
-    // Función que devuelve una promesa 
   }
 
 
@@ -85,31 +55,31 @@ export async function eventsDom() {
  * Todo:Lógica condicional basada en la URL 
  */
   if ( currentUrl.includes("picaranch.html") ) {
-      await imprimir( products.picaranch, tablaPicaranch );
+      await imprimir( products.picaranch, tablaProductos );
   } else if ( currentUrl.includes("salchipapa.html") ) {
-      await imprimir( products.salchipapas, tablaSalchipapa );
+      await imprimir( products.salchipapas, tablaProductos );
   } else if ( currentUrl.includes("salchipapa-crispy.html") ) {
-      await imprimir( products.salchipapasCrispy, tablaSalchipapaCrispy );
+      await imprimir( products.salchipapasCrispy, tablaProductos );
   } else if ( currentUrl.includes("hamburguesa.html") ) {
-      await imprimir( products.hamburguesas, tablaHamburguesa )
+      await imprimir( products.hamburguesas, tablaProductos )
   } else if ( currentUrl.includes("perro.html") ) {
-      await imprimir( products.perros, tablaperro );
+      await imprimir( products.perros, tablaProductos );
   } else if ( currentUrl.includes("choriqueta.html") ) {
-      await imprimir( products.choriqueta, tablaChoriqueta );
+      await imprimir( products.choriqueta, tablaProductos );
   } else if ( currentUrl.includes("burrito.html") ) {
-      await imprimir( products.burritos, tablaBurritos );
+      await imprimir( products.burritos, tablaProductos );
   } else if ( currentUrl.includes("pincho.html") ) {
-      await imprimir( products.pinchos, tablaPincho );
+      await imprimir( products.pinchos, tablaProductos );
   } else if ( currentUrl.includes("dias-felices.html") ) {
-      await imprimir( products.promociones, tablaPromociones );
+      await imprimir( products.promociones, tablaProductos );
   } else if ( currentUrl.includes("postres.html" ) ) {
-      await imprimir( products.postres, tablaPostre );
+      await imprimir( products.postres, tablaProductos );
   } else if ( currentUrl.includes("acompaniamientos.html") ) {
-      await imprimir( products.acompañamientos, tablaAcompañamiento );
+      await imprimir( products.acompañamientos, tablaProductos );
   } else if ( currentUrl.includes("adicionales.html") ) {
-      await imprimir( products.adiccionales, tablaAdicionales );
+      await imprimir( products.adiccionales, tablaProductos );
   } else if ( currentUrl.includes("bebidas.html") ) {
-      await imprimir( products.bebidas, tablaBebidas );
+      await imprimir( products.bebidas, tablaProductos );
   }
 
   function eventosDespuesDeCarga() {
@@ -256,7 +226,6 @@ eventosDespuesDeCarga().then(() => {
         // Obtener el número total de elementos almacenados en el localStorage
         const totalKeys = localStorage.length;
 
-        // Iterar sobre todas las claves y mostrarlas
         for (let i = 0; i < totalKeys; i++) {
             let key = localStorage.key(i);
             let datosJSON = localStorage.getItem(key);
@@ -304,43 +273,12 @@ eventosDespuesDeCarga().then(() => {
                 valorTotalPedido = contador;
             }
         }
-        
-        //---------inicio mensaje
-
-        const btnEnviar = document.getElementById('enviar');
-        btnEnviar.addEventListener('click', ()=>{
-            //console.log('hola');
-            stringPedido = 'Hola mi pedido de hoy es: ';
-            
-            tarjetaPedido.forEach(element => {
-                let stringProducto = 'ufat' + element.cantidad + ' ' + element.name + ' Valor: ' + element.total + ' ' ;             
-                stringPedido = stringPedido + stringProducto; 
-            });
-            
-            let stringTotal = 'ufat ufat ufat' + ' EL VALOR DEL PEDIDO ES: ' + valorTotalPedido;  
-            stringPedido = stringPedido + stringTotal;
-            //console.log(stringPedido);
-            
-            const encriptacion = texto => {
-                return texto
-                .replace(/ufat/g, "%0A")
-                .replace(/ /g, "%20")
-                .replace(/:/g, "%3A")
-            }
-            let url         = "https://wa.me/";
-            let numeroCel   = "+573202974075?text="
-            let encriptado  = encriptacion( stringPedido )
-            window.location.href = url + numeroCel + encriptado;
-            console.log(encriptacion( stringPedido ));
-            localStorage.clear();
-
-        });
-        //---------fin    mensaje
-
-
         valorTotalShow();
-        
-        //console.log(tarjetaPedido);
+
+        //---------inicio mensaje
+        const mensaje = new Message('enviar', tarjetaPedido, valorTotalPedido);
+        mensaje.botonEnviar()
+        //---------fin    mensaje
 
         const modalBody = document.querySelector('.modal-body');    
         // Establece el contenido del cuerpo del modal
@@ -397,8 +335,6 @@ eventosDespuesDeCarga().then(() => {
     });
   
     //---------fin cierra el modal del carrito
-
-    
 
     function imprimirTablaCarrito(arreglo, tabla) {
         if (arreglo.length !== 0 ) {   
