@@ -1,3 +1,3 @@
-import { eventsDom } from "./js/events.js";
+import { eventsDom } from "./js/products/events.js";
 
 eventsDom();
