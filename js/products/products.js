@@ -16,6 +16,22 @@ export const products = {
       precio: "$ 17.0",
       precioNum: 17000,
     },
+    {
+      indice: "cuatropicaranch",
+      name: "PICARANCH CON BATIDO EN AGUA",
+      descripcion:
+        "Deliciosos bastoncitos de pura pechuga apanada, 160 gramos de papa a la francesa y tronquitos de exquisita salchicha crispy. Acompañada con una refrescante batido en agua  y salsas de tu preferencia.",
+      precio: "$ 22.9",
+      precioNum: 22900,
+    },
+    {
+      indice: "cincopicaranch",
+      name: "PICARANCH CON BATIDO EN LECHE",
+      descripcion:
+        "Deliciosos bastoncitos de pura pechuga apanada, 160 gramos de papa a la francesa y tronquitos de exquisita salchicha crispy. Acompañada con una refrescante batido en leche y salsas de tu preferencia.",
+      precio: "$ 23.9",
+      precioNum: 23900,
+    },
   ],
   salchipapas: [
     {
@@ -23,32 +39,32 @@ export const products = {
       name: "SALCHIPAPA RAFITA <br> Personal",
       descripcion:
         "170gr de papa en cascos, 100gr de salchicha tipo ranchera, huevo cocinado, 30gr de queso costeño y exclusivas salsas de la casa",
-      precio: "$ 12.9",
-      precioNum: 12900,
+      precio: "$ 13.9",
+      precioNum: 13900,
     },
     {
       indice: "doss",
       name: "SALCHIPAPA LUCHITO <br> Personal",
       descripcion:
         "170gr de papa en cascos, 100gr de salchicha tipo ranchera, huevo cocinado, 30gr de queso costeño, 140gr de guiso de la casa a base de carne desmechada, pollo, tocineta, cebolla caramelizada y exclusivas salsas de la casa",
-      precio: "$ 16.9",
-      precioNum: 16900,
+      precio: "$ 17.9",
+      precioNum: 17900,
     },
     {
       indice: "tress",
       name: "SALCHIPAPA RAFA",
       descripcion:
         "340gr de papa en cascos, 200gr de salchicha tipo ranchera, 2 huevo cocinados, 60gr de queso costeño y exclusivas salsas de la casa",
-      precio: "$ 24.9",
-      precioNum: 24900,
+      precio: "$ 26.9",
+      precioNum: 26900,
     },
     {
       indice: "cuatros",
       name: "SALCHIPAPA LUCHO",
       descripcion:
         "340gr de papa en cascos, 200gr de salchicha tipo ranchera, 2 huevo cocinados, 60gr de queso costeño, 280gr de guiso de la casa a base de carne desmechada, pollo, tocineta, cebolla caramelizada y exclusivas salsas de la casa",
-      precio: "$ 31.9",
-      precioNum: 31900,
+      precio: "$ 33.9",
+      precioNum: 33900,
     },
   ],
   salchipapasCrispy: [
@@ -57,32 +73,32 @@ export const products = {
       name: "SALCHIPAPA RAFITA CRISPY <br> Personal",
       descripcion:
         "Lomitos de pollo apanado crispy, 170gr de papa en cascos, 100gr de salchicha tipo ranchera, huevo cocinado, 30gr de queso costeño y exclusivas salsas de la casa",
-      precio: "$ 15.9",
-      precioNum: 15900,
+      precio: "$ 16.9",
+      precioNum: 16900,
     },
     {
       indice: "dossCrispy",
       name: "SALCHIPAPA LUCHITO CRISPY <br> Personal",
       descripcion:
         "Lomitos de pollo apanado crispy, 170gr de papa en cascos, 100gr de salchicha tipo ranchera, huevo cocinado, 30gr de queso costeño, 140gr de guiso de la casa a base de carne desmechada, pollo, tocineta, cebolla caramelizada y exclusivas salsas de la casa",
-      precio: "$ 19.9",
-      precioNum: 19900,
+      precio: "$ 20.9",
+      precioNum: 20900,
     },
     {
       indice: "tressCrispy",
       name: "SALCHIPAPA RAFA CRISPY",
       descripcion:
         "Lomitos de pollo apanado crispy, 340gr de papa en cascos, 200gr de salchicha tipo ranchera, 2 huevo cocinados, 60gr de queso costeño y exclusivas salsas de la casa",
-      precio: "$ 30.9",
-      precioNum: 30900,
+      precio: "$ 32.9",
+      precioNum: 32900,
     },
     {
       indice: "cuatrosCrispy",
       name: "SALCHIPAPA LUCHO CRISPY",
       descripcion:
         "Lomitos de pollo apanado crispy, 340gr de papa en cascos, 200gr de salchicha tipo ranchera, 2 huevo cocinados, 60gr de queso costeño, 280gr de guiso de la casa a base de carne desmechada, pollo, tocineta, cebolla caramelizada y exclusivas salsas de la casa",
-      precio: "$ 37.9",
-      precioNum: 37900,
+      precio: "$ 39.9",
+      precioNum: 39900,
     },
   ],
   hamburguesas: [
@@ -91,192 +107,192 @@ export const products = {
       name: "RANCHERA",
       descripcion:
         "Carne de 125 gr, pan bimbo, queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsa de la casa",
-      precio: "$ 11.9",
-      precioNum: 11900,
+      precio: "$ 12.9",
+      precioNum: 12900,
     },
     {
       indice: "dos",
       name: "SUPER RANCHERA",
       descripcion:
         "Carne de 170 gr, pan bimbo , queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsa de la casa",
-      precio: "$ 13.9",
-      precioNum: 13900,
+      precio: "$ 14.9",
+      precioNum: 14900,
     },
     {
       indice: "tres",
       name: "POLLO RANCHERA",
       descripcion:
         "Pechuga 170gr, pan bimbo , queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsa de la casa",
-      precio: "$ 13.9",
-      precioNum: 13900,
+      precio: "$ 14.9",
+      precioNum: 14900,
     },
     {
       indice: "cuatro",
       name: "CERDO RANCHERA",
       descripcion:
         "Pernil de cerdo fino de 160gr, pan bimbo , queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsa de la casa",
-      precio: "$ 14.9",
-      precioNum: 14900,
+      precio: "$ 15.9",
+      precioNum: 15900,
     },
     {
       indice: "cinco",
       name: "MEGA RANCHERA",
       descripcion:
         "Carne de 125 gr, pan bimbo , chorizo campesino 100gr, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsa de la casa",
-      precio: "$ 18.9",
-      precioNum: 18900,
+      precio: "$ 19.9",
+      precioNum: 19900,
     },
     {
       indice: "seis",
       name: "MEGA SUPER",
       descripcion:
         "Carne de 170 gr. pan bimbo , chorizo campesino 100gr, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsa de la casa",
-      precio: "$ 20.9",
-      precioNum: 20900,
+      precio: "$ 21.9",
+      precioNum: 21900,
     },
     {
       indice: "siete",
       name: "MEGA POLLO",
       descripcion:
         "Pollo de 170 gr, pan bimbo , chorizo campesino 100gr, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsa de la casa",
-      precio: "$ 20.9",
-      precioNum: 20900,
+      precio: "$ 21.9",
+      precioNum: 21900,
     },
     {
       indice: "ocho",
       name: "MEGA CERDO",
       descripcion:
         "Pernil de cerdo fino de 160 gr, pan bimbo , chorizo campesino 100gr, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsa de la casa",
-      precio: "$ 21.9",
-      precioNum: 21900,
+      precio: "$ 22.9",
+      precioNum: 22900,
     },
     {
       indice: "nueve",
       name: "MAXI RANCHERA",
       descripcion:
         "Doble carne de 125 gr, pan bimbo , queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 20.9",
-      precioNum: 20900,
+      precio: "$ 21.9",
+      precioNum: 21900,
     },
     {
       indice: "diez",
       name: "MAXI CERDO",
       descripcion:
         "Pernil de cerdo de 180 gr, carne 125 gr, pan bimbo , doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 22.9",
-      precioNum: 22900,
+      precio: "$ 23.9",
+      precioNum: 23900,
     },
     {
       indice: "once",
       name: "MAXI POLLO",
       descripcion:
         "Pollo de 170 gr, carne 125 gr, pan bimbo , doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 22.9",
-      precioNum: 22900,
+      precio: "$ 23.9",
+      precioNum: 23900,
     },
     {
       indice: "doce",
       name: "MAXI CERDO SUPER",
       descripcion:
         "Pernil de cerdo de 160 gr, carne 170gr, pan bimbo , doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 24.9",
-      precioNum: 24900,
+      precio: "$ 25.9",
+      precioNum: 25900,
     },
     {
       indice: "trece",
       name: "MAXI POLLO SUPER",
       descripcion:
         "Pollo de 170 gr, carne 170 gr, pan bimbo , doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 24.9",
-      precioNum: 24900,
+      precio: "$ 25.9",
+      precioNum: 25900,
     },
     {
       indice: "catorce",
       name: "MAXI POLLO CERDO",
       descripcion:
         "Pollo de 140 gr, cerdo 160 gr, pan bimbo , doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 24.9",
-      precioNum: 24900,
+      precio: "$ 25.9",
+      precioNum: 25900,
     },
     {
       indice: "pollopolH",
       name: "MAXI POLLO POLLO",
       descripcion:
         "Doble Pollo de 170 gr, pan bimbo , doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 24.9",
-      precioNum: 24900,
+      precio: "$ 25.9",
+      precioNum: 25900,
     },
     {
       indice: "quince",
       name: "MAXI SUPER",
       descripcion:
         "Doble carne 170 gr, pan bimbo, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 24.9",
-      precioNum: 24900,
+      precio: "$ 25.9",
+      precioNum: 25900,
     },
     {
       indice: "dieciseis",
       name: "MAXI MEGA",
       descripcion:
         "Doble carne 125 gr, chorizo campesino 100 gr, pan bimbo, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 28.9",
-      precioNum: 28900,
+      precio: "$ 29.9",
+      precioNum: 29900,
     },
     {
       indice: "diecisiete",
       name: "MAXI MEGA CERDO",
       descripcion:
         "Cerdo 160 gr, Carne 125 gr, Chorizo Campesino de 100 gr, pan bimbo, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 29.9",
-      precioNum: 29900,
+      precio: "$ 30.9",
+      precioNum: 30900,
     },
     {
       indice: "dieciocho",
       name: "MAXI MEGA POLLO",
       descripcion:
         "Pollo de 170 gr, Carne 170 gr, pan bimbo, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 29.9",
-      precioNum: 29900,
+      precio: "$ 30.9",
+      precioNum: 30900,
     },
     {
       indice: "diecinueve",
       name: "MAXI MEGA CERDO SUPER",
       descripcion:
         "Cerdo 160 gr. Carne 170 gr, Chorizo Campesino de 100 gr, pan bimbo, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 31.9",
-      precioNum: 31900,
+      precio: "$ 32.9",
+      precioNum: 32900,
     },
     {
       indice: "veinte",
       name: "MAXI MEGA POLLO SUPER",
       descripcion:
         "Pollo de 140 gr, Carne 170 gr, Chorizo campesino de 100 gr, pan bimbo, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 31.9",
-      precioNum: 31900,
+      precio: "$ 32.9",
+      precioNum: 32900,
     },
     {
       indice: "veintiunuo",
       name: "MAXI MEGA SUPER",
       descripcion:
         "Doble carne 170 gr, chorizo campesino 100 gr, pan bimbo, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 32.9",
-      precioNum: 32900,
+      precio: "$ 33.9",
+      precioNum: 33900,
     },
     {
       indice: "veintidos",
       name: "TRIFASICA",
       descripcion:
         "Carne de 125 gr,cerdo 160 gr. Pollo 170 gr, Chorizo Campesino de 100 gr, Tocineta ahumada pan bimbo, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 36.9",
-      precioNum: 36900,
+      precio: "$ 37.9",
+      precioNum: 37900,
     },
     {
       indice: "veintitres",
       name: "SUPER TRIFASICA",
       descripcion:
         "Carne de 170 gr,cerdo 160 gr.Pollo 170 gr, Chorizo Campesino de 100 gr,Tocineta ahumada pan bimbo, queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 38.9",
-      precioNum: 38900,
+      precio: "$ 39.9",
+      precioNum: 39900,
     },
   ],
   perros: [
@@ -285,24 +301,24 @@ export const products = {
       name: "PERRO MEDIANO",
       descripcion:
         "Salchicha tipo ranchera 80 gr. pan bimbo, queso, cebolla, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 8.9",
-      precioNum: 8900,
+      precio: "$ 9.9",
+      precioNum: 9900,
     },
     {
       indice: "dosp",
       name: "PERRO RANCHERO",
       descripcion:
         "Salchicha tipo ranchera 100 gr, pan , doble queso, jamón, cebolla, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 11.9",
-      precioNum: 11900,
+      precio: "$ 12.9",
+      precioNum: 12900,
     },
     {
       indice: "tresp",
       name: "PERRO FRANKFURT",
       descripcion:
         "Salchicha tipo ranchera 120 gr, pan , queso, Jamón, cebolla, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 13.9",
-      precioNum: 13900,
+      precio: "$ 14.9",
+      precioNum: 14900,
     },
   ],
   choriqueta: [
@@ -328,25 +344,25 @@ export const products = {
       indice: "unobu",
       name: "BURRITO DE CERDO",
       descripcion:
-        "Brocheta de cerdo 180 gr, triple queso,papas cabello de angel vegetales frescos y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
-      precio: "$ 17.9",
-      precioNum: 17900,
+        "Chuleticas de cerdo 200 gr, triple queso,papas cabello de angel vegetales frescos y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
+      precio: "$ 18.9",
+      precioNum: 18900,
     },
     {
       indice: "dosbu",
       name: "BURRITO DE ATUN",
       descripcion:
         "atun 110 gr, doble queso, papas cabello de angel vegetales frescos y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
-      precio: "$ 17.9",
-      precioNum: 17900,
+      precio: "$ 18.9",
+      precioNum: 18900,
     },
     {
       indice: "tresbu",
       name: "BURRITO DE POLLO",
       descripcion:
         "6 lomitos de pollo apanado, doble queso, papas cabello de angel vegetales frescos y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
-      precio: "$ 17.9",
-      precioNum: 17900,
+      precio: "$ 18.9",
+      precioNum: 18900,
     },
   ],
   pinchos: [
@@ -354,8 +370,8 @@ export const products = {
       indice: "unopi",
       name: "CHULETICAS DE CERDO",
       descripcion: "Chuletas de cerdo de cerdo de 200 gr, arepa antioqueña y salsa BBQ",
-      precio: "$ 11.9",
-      precioNum: 11900,
+      precio: "$ 12.9",
+      precioNum: 12900,
     },
   ],
   postres: [
@@ -373,25 +389,25 @@ export const products = {
       indice: "unopr",
       name: "DIA FELIZ 2 HAMBURGUESA ",
       descripcion:
-        "2 hamburguesas de carne de res de 125 gr, pan bimbo , queso, jamón, cebolla, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 20.0",
-      precioNum: 20000,
+        "2 hamburguesas de carne de res de 105 gr, pan bimbo , queso, jamón, cebolla, papas cabello de angel y exclusivas salsas de la casa",
+      precio: "$ 22.0",
+      precioNum: 22000,
     },
     {
       indice: "dospr",
       name: "DIA FELIZ 2 PERROS MEDIANOS",
       descripcion:
         "2 perros con salchicha tipo ranchera americana de 80 gr, pan bimbo, cebolla, queso, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 17.0",
-      precioNum: 17000,
+      precio: "$ 19.0",
+      precioNum: 19000,
     },
     {
       indice: "trespr",
       name: "DIA FELIZ PERRO Y HAMBURGUESA",
       descripcion:
-        "Hamburguesa carne de res 125gr, pan bimbo , cebolla, queso, jamón, papas cabello de angel y exclusivas salsa de la casa Perro mediano salchicha tipo ranchera americana de 80 gr, pan bimbo, cebolla, queso, papas cabello de angel y exclusivas salsa de la casa",
-      precio: "$ 18.5",
-      precioNum: 18500,
+        "Hamburguesa carne de res 105 gr, pan bimbo , cebolla, queso, jamón, papas cabello de angel y exclusivas salsa de la casa Perro mediano salchicha tipo ranchera americana de 80 gr, pan bimbo, cebolla, queso, papas cabello de angel y exclusivas salsa de la casa",
+      precio: "$ 20.5",
+      precioNum: 20500,
     },
   ],
   adiccionales: [
@@ -548,20 +564,20 @@ export const products = {
       precio: "$ 6.9",
       precioNum: 6900,
     },
-    {
-      indice: "ochob",
-      name: "BUDWEISER",
-      descripcion: "BUDWEISER",
-      precio: "$ 4.9",
-      precioNum: 4900,
-    },
-    {
-      indice: "nueveb",
-      name: "HEINEKEN",
-      descripcion: "HEINEKEN",
-      precio: "$ 4.9",
-      precioNum: 4900,
-    },
+    // {
+    //   indice: "ochob",
+    //   name: "BUDWEISER",
+    //   descripcion: "BUDWEISER",
+    //   precio: "$ 4.9",
+    //   precioNum: 4900,
+    // },
+    // {
+    //   indice: "nueveb",
+    //   name: "HEINEKEN",
+    //   descripcion: "HEINEKEN",
+    //   precio: "$ 4.9",
+    //   precioNum: 4900,
+    // },
     {
       indice: "aguilaLi",
       name: "AGUILA LIGTH <br> LITRO",
@@ -569,13 +585,13 @@ export const products = {
       precio: "$ 8.9",
       precioNum: 8900,
     },
-    {
-      indice: "diezb",
-      name: "REDBULL",
-      descripcion: "REDBULL",
-      precio: "$ 7.9",
-      precioNum: 7900,
-    },
+    // {
+    //   indice: "diezb",
+    //   name: "REDBULL",
+    //   descripcion: "REDBULL",
+    //   precio: "$ 7.9",
+    //   precioNum: 7900,
+    // },
     {
       indice: "onceb",
       name: "BATIDOS EN <br> AGUA",
@@ -598,8 +614,8 @@ export const products = {
       indice: "unoAco",
       name: "PAPA FRANCESA",
       descripcion: "PORCION 160 GRAMOS, EXCLUSIVAS SALSAS",
-      precio: "$ 6.9",
-      precioNum: 6900,
+      precio: "$ 7.9",
+      precioNum: 7900,
     },
     {
       indice: "dosAco",
@@ -619,8 +635,8 @@ export const products = {
       indice: "cuatroAco",
       name: "LOMITOS DE POLLO",
       descripcion: "PORCION 6 UNIDADES, EXCLUSIVAS SALSAS",
-      precio: "$ 7.9",
-      precioNum: 7900,
+      precio: "$ 8.9",
+      precioNum: 8900,
     },
     {
       indice: "seisAco",
