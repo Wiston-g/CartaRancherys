@@ -5,16 +5,16 @@ export const products = {
       name: "PICARANCH CON GASEOSA",
       descripcion:
         "Deliciosos bastoncitos de pura pechuga apanada, 160 gramos de papa a la francesa y tronquitos de exquisita salchicha crispy. Acompañada con una refrescante gaseosa y salsas de tu preferencia.",
-      precio: "$ 16.5",
-      precioNum: 16500,
+      precio: "$ 17.5",
+      precioNum: 17500,
     },
     {
       indice: "trespicaranch",
       name: "PICARANCH CON HIT",
       descripcion:
         "Deliciosos bastoncitos de pura pechuga apanada, 160 gramos de papa a la francesa y tronquitos de exquisita salchicha crispy. Acompañada con un refrescante jugo Hit y salsas de tu preferencia.",
-      precio: "$ 17.0",
-      precioNum: 17000,
+      precio: "$ 18.0",
+      precioNum: 18000,
     },
     {
       indice: "cuatropicaranch",
@@ -39,32 +39,32 @@ export const products = {
       name: "SALCHIPAPA RAFITA <br> Personal",
       descripcion:
         "170gr de papa en cascos, 100gr de salchicha tipo ranchera, huevo cocinado, 30gr de queso costeño y exclusivas salsas de la casa",
-      precio: "$ 13.9",
-      precioNum: 13900,
+      precio: "$ 14.9",
+      precioNum: 14900,
     },
     {
       indice: "doss",
       name: "SALCHIPAPA LUCHITO <br> Personal",
       descripcion:
         "170gr de papa en cascos, 100gr de salchicha tipo ranchera, huevo cocinado, 30gr de queso costeño, 140gr de guiso de la casa a base de carne desmechada, pollo, tocineta, cebolla caramelizada y exclusivas salsas de la casa",
-      precio: "$ 17.9",
-      precioNum: 17900,
+      precio: "$ 18.9",
+      precioNum: 18900,
     },
     {
       indice: "tress",
       name: "SALCHIPAPA RAFA",
       descripcion:
         "340gr de papa en cascos, 200gr de salchicha tipo ranchera, 2 huevo cocinados, 60gr de queso costeño y exclusivas salsas de la casa",
-      precio: "$ 26.9",
-      precioNum: 26900,
+      precio: "$ 28.9",
+      precioNum: 28900,
     },
     {
       indice: "cuatros",
       name: "SALCHIPAPA LUCHO",
       descripcion:
         "340gr de papa en cascos, 200gr de salchicha tipo ranchera, 2 huevo cocinados, 60gr de queso costeño, 280gr de guiso de la casa a base de carne desmechada, pollo, tocineta, cebolla caramelizada y exclusivas salsas de la casa",
-      precio: "$ 33.9",
-      precioNum: 33900,
+      precio: "$ 35.9",
+      precioNum: 35900,
     },
   ],
   salchipapasCrispy: [
@@ -73,32 +73,32 @@ export const products = {
       name: "SALCHIPAPA RAFITA CRISPY <br> Personal",
       descripcion:
         "Lomitos de pollo apanado crispy, 170gr de papa en cascos, 100gr de salchicha tipo ranchera, huevo cocinado, 30gr de queso costeño y exclusivas salsas de la casa",
-      precio: "$ 16.9",
-      precioNum: 16900,
+      precio: "$ 17.9",
+      precioNum: 17900,
     },
     {
       indice: "dossCrispy",
       name: "SALCHIPAPA LUCHITO CRISPY <br> Personal",
       descripcion:
         "Lomitos de pollo apanado crispy, 170gr de papa en cascos, 100gr de salchicha tipo ranchera, huevo cocinado, 30gr de queso costeño, 140gr de guiso de la casa a base de carne desmechada, pollo, tocineta, cebolla caramelizada y exclusivas salsas de la casa",
-      precio: "$ 20.9",
-      precioNum: 20900,
+      precio: "$ 21.9",
+      precioNum: 21900,
     },
     {
       indice: "tressCrispy",
       name: "SALCHIPAPA RAFA CRISPY",
       descripcion:
         "Lomitos de pollo apanado crispy, 340gr de papa en cascos, 200gr de salchicha tipo ranchera, 2 huevo cocinados, 60gr de queso costeño y exclusivas salsas de la casa",
-      precio: "$ 32.9",
-      precioNum: 32900,
+      precio: "$ 34.9",
+      precioNum: 34900,
     },
     {
       indice: "cuatrosCrispy",
       name: "SALCHIPAPA LUCHO CRISPY",
       descripcion:
         "Lomitos de pollo apanado crispy, 340gr de papa en cascos, 200gr de salchicha tipo ranchera, 2 huevo cocinados, 60gr de queso costeño, 280gr de guiso de la casa a base de carne desmechada, pollo, tocineta, cebolla caramelizada y exclusivas salsas de la casa",
-      precio: "$ 39.9",
-      precioNum: 39900,
+      precio: "$ 31.9",
+      precioNum: 31900,
     },
   ],
   hamburguesas: [
@@ -107,40 +107,40 @@ export const products = {
       name: "RANCHERA",
       descripcion:
         "Carne de 125 gr, pan bimbo, queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsa de la casa",
-      precio: "$ 12.9",
-      precioNum: 12900,
+      precio: "$ 13.9",
+      precioNum: 13900,
     },
     {
       indice: "dos",
       name: "SUPER RANCHERA",
       descripcion:
         "Carne de 170 gr, pan bimbo , queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsa de la casa",
-      precio: "$ 14.9",
-      precioNum: 14900,
+      precio: "$ 15.9",
+      precioNum: 15900,
     },
     {
       indice: "tres",
       name: "POLLO RANCHERA",
       descripcion:
         "Pechuga 170gr, pan bimbo , queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsa de la casa",
-      precio: "$ 14.9",
-      precioNum: 14900,
+      precio: "$ 15.9",
+      precioNum: 15900,
     },
     {
       indice: "cuatro",
       name: "CERDO RANCHERA",
       descripcion:
         "Pernil de cerdo fino de 160gr, pan bimbo , queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsa de la casa",
-      precio: "$ 15.9",
-      precioNum: 15900,
+      precio: "$ 16.9",
+      precioNum: 16900,
     },
     {
       indice: "cinco",
       name: "MEGA RANCHERA",
       descripcion:
         "Carne de 125 gr, pan bimbo , chorizo campesino 100gr, doble queso, jamón, vegetales frescos, papas cabello de angel y exclusivas salsa de la casa",
-      precio: "$ 19.9",
-      precioNum: 19900,
+      precio: "$ 20.9",
+      precioNum: 20900,
     },
     {
       indice: "seis",
@@ -301,24 +301,24 @@ export const products = {
       name: "PERRO MEDIANO",
       descripcion:
         "Salchicha tipo ranchera 80 gr. pan bimbo, queso, cebolla, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 9.9",
-      precioNum: 9900,
+      precio: "$ 10.9",
+      precioNum: 10900,
     },
     {
       indice: "dosp",
       name: "PERRO RANCHERO",
       descripcion:
         "Salchicha tipo ranchera 100 gr, pan , doble queso, jamón, cebolla, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 12.9",
-      precioNum: 12900,
+      precio: "$ 13.9",
+      precioNum: 13900,
     },
     {
       indice: "tresp",
       name: "PERRO FRANKFURT",
       descripcion:
         "Salchicha tipo ranchera 120 gr, pan , queso, Jamón, cebolla, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 14.9",
-      precioNum: 14900,
+      precio: "$ 15.9",
+      precioNum: 15900,
     },
   ],
   choriqueta: [
@@ -327,16 +327,16 @@ export const products = {
       name: "CHORIQUETA",
       descripcion:
         "Chorizo campesino 100 gr, Arepa, Tocineta, queso y exclusivas salsas de la casa",
-      precio: "$ 7.9",
-      precioNum: 7900,
+      precio: "$ 8.9",
+      precioNum: 8900,
     },
     {
       indice: "dosc",
       name: "SUPER CHORIQUETA",
       descripcion:
         "Chorizo campesino de 100gr, pan , tocineta, cebolla, queso, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 11.9",
-      precioNum: 11900,
+      precio: "$ 12.9",
+      precioNum: 12900,
     },
   ],
   burritos: [
@@ -345,24 +345,24 @@ export const products = {
       name: "BURRITO DE CERDO",
       descripcion:
         "Chuleticas de cerdo 200 gr, triple queso,papas cabello de angel vegetales frescos y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
-      precio: "$ 18.9",
-      precioNum: 18900,
+      precio: "$ 19.9",
+      precioNum: 19900,
     },
     {
       indice: "dosbu",
       name: "BURRITO DE ATUN",
       descripcion:
         "atun 110 gr, doble queso, papas cabello de angel vegetales frescos y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
-      precio: "$ 18.9",
-      precioNum: 18900,
+      precio: "$ 19.9",
+      precioNum: 19900,
     },
     {
       indice: "tresbu",
       name: "BURRITO DE POLLO",
       descripcion:
         "6 lomitos de pollo apanado, doble queso, papas cabello de angel vegetales frescos y exclusivas salsas de la casa, todo embuelto en una deliciosa tortilla bimbo",
-      precio: "$ 18.9",
-      precioNum: 18900,
+      precio: "$ 19.9",
+      precioNum: 19900,
     },
   ],
   pinchos: [
@@ -370,7 +370,7 @@ export const products = {
       indice: "unopi",
       name: "CHULETICAS DE CERDO",
       descripcion: "Chuletas de cerdo de cerdo de 200 gr, arepa antioqueña y salsa BBQ",
-      precio: "$ 12.9",
+      precio: "$ 13.9",
       precioNum: 12900,
     },
   ],
@@ -390,24 +390,24 @@ export const products = {
       name: "DIA FELIZ 2 HAMBURGUESA ",
       descripcion:
         "2 hamburguesas de carne de res de 105 gr, pan bimbo , queso, jamón, cebolla, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 22.0",
-      precioNum: 22000,
+      precio: "$ 24.0",
+      precioNum: 24000,
     },
     {
       indice: "dospr",
       name: "DIA FELIZ 2 PERROS MEDIANOS",
       descripcion:
         "2 perros con salchicha tipo ranchera americana de 80 gr, pan bimbo, cebolla, queso, papas cabello de angel y exclusivas salsas de la casa",
-      precio: "$ 19.0",
-      precioNum: 19000,
+      precio: "$ 21.0",
+      precioNum: 21000,
     },
     {
       indice: "trespr",
       name: "DIA FELIZ PERRO Y HAMBURGUESA",
       descripcion:
         "Hamburguesa carne de res 105 gr, pan bimbo , cebolla, queso, jamón, papas cabello de angel y exclusivas salsa de la casa Perro mediano salchicha tipo ranchera americana de 80 gr, pan bimbo, cebolla, queso, papas cabello de angel y exclusivas salsa de la casa",
-      precio: "$ 20.5",
-      precioNum: 20500,
+      precio: "$ 22.5",
+      precioNum: 22500,
     },
   ],
   adiccionales: [
@@ -415,22 +415,22 @@ export const products = {
       indice: "unoA",
       name: "TOCINETA",
       descripcion: "TOCINETA",
-      precio: "$ 2.5",
-      precioNum: 2500,
+      precio: "$ 2.9",
+      precioNum: 2900,
     },
     {
       indice: "dosA",
       name: "QUESO",
       descripcion: "QUESO",
-      precio: "$ 1.5",
-      precioNum: 1500,
+      precio: "$ 1.9",
+      precioNum: 1900,
     },
     {
       indice: "tresA",
       name: "JAMON",
       descripcion: "JAMON",
-      precio: "$ 1.5",
-      precioNum: 1500,
+      precio: "$ 1.9",
+      precioNum: 1900,
     },
     {
       indice: "cuatroA",
@@ -465,17 +465,17 @@ export const products = {
   bebidas: [
     {
       indice: "unob",
-      name: "COCA COLA <br> 350 ML",
-      descripcion: "COCA COLA 350",
+      name: "COCA COLA <br> 250 ML",
+      descripcion: "COCA COLA 250",
       precio: "$ 2.9",
-      precioNum: 25900,
+      precioNum: 2900,
     },
     {
       indice: "dosb",
-      name: "COCA COLA <br> PERSONAL 400 ML",
-      descripcion: "COCA COLA PERSONAL 400 ML.",
-      precio: "$ 3.5",
-      precioNum: 3500,
+      name: "COCA COLA <br> PERSONAL 500 ML",
+      descripcion: "COCA COLA PERSONAL 500 ML.",
+      precio: "$ 3.9",
+      precioNum: 3900,
     },
     {
       indice: "quatrP",
@@ -484,13 +484,13 @@ export const products = {
       precio: "$ 3.5",
       precioNum: 3500,
     },
-    {
-      indice: "kolaP",
-      name: "KOLA ROMAN <br> PERSONAL 400 ML",
-      descripcion: "KOLA ROMAN PERSONAL 400 ML.",
-      precio: "$ 3.5",
-      precioNum: 3500,
-    },
+    // {
+    //   indice: "kolaP",
+    //   name: "KOLA ROMAN <br> PERSONAL 400 ML",
+    //   descripcion: "KOLA ROMAN PERSONAL 400 ML.",
+    //   precio: "$ 3.5",
+    //   precioNum: 3500,
+    // },
     {
       indice: "tresb",
       name: "COCA COLA 1.5",
@@ -503,24 +503,24 @@ export const products = {
       name: "JUGO DE VALLE <br> PERSONAL",
       descripcion:
         "JUGO DE VALLE SABORES:( Fresa, Mandarina, Mango, Mora, Naranja, Piña y Salpicon)",
-      precio: "$ 3.5",
-      precioNum: 3500,
+      precio: "$ 3.9",
+      precioNum: 3900,
     },
     {
       indice: "valle2",
       name: "JUGO DE VALLE <br> CAJA",
       descripcion:
-        "JUGO DE VALLE SABORES:( Fresa, Mandarina, Mango, Mora, Naranja, Piña y Salpicon)",
-      precio: "$ 4.9",
-      precioNum: 4900,
+        "JUGO DE VALLE 1.5L SABORES:( Fresa, Mandarina, Mango, Mora, Naranja, Piña y Salpicon)",
+      precio: "$ 5.9",
+      precioNum: 5900,
     },
-    {
-      indice: "cincob",
-      name: "HIT 1.5",
-      descripcion: "HIT 1.5  SABORES:( Mango, Mora, Naranja, Piña y tropical)",
-      precio: "$ 6.9",
-      precioNum: 6900,
-    },
+    // {
+    //   indice: "cincob",
+    //   name: "HIT 1.5",
+    //   descripcion: "HIT 1.5  SABORES:( Mango, Mora, Naranja, Piña y tropical)",
+    //   precio: "$ 6.9",
+    //   precioNum: 6900,
+    // },
     {
       indice: "qua1",
       name: "QUATRO 1.5 lts",
@@ -528,19 +528,19 @@ export const products = {
       precio: "$ 6.9",
       precioNum: 6900,
     },
-    {
-      indice: "kola15",
-      name: "KOLA ROMAN <br> 1.5 lts",
-      descripcion: "KOLA ROMAN 1.5 lts",
-      precio: "$ 6.9",
-      precioNum: 6900,
-    },
+    // {
+    //   indice: "kola15",
+    //   name: "KOLA ROMAN <br> 1.5 lts",
+    //   descripcion: "KOLA ROMAN 1.5 lts",
+    //   precio: "$ 6.9",
+    //   precioNum: 6900,
+    // },
     {
       indice: "coc2",
       name: "COCA COLA <br> 2 lts",
       descripcion: "COCA COLA 2 lts, botella retornable",
-      precio: "$ 7.9",
-      precioNum: 7900,
+      precio: "$ 8.9",
+      precioNum: 8900,
     },
 
     {
@@ -550,20 +550,20 @@ export const products = {
       precio: "$ 7.9",
       precioNum: 7900,
     },
-    {
-      indice: "seisb",
-      name: "CORONITA",
-      descripcion: "CORONITA",
-      precio: "$ 5.9",
-      precioNum: 5900,
-    },
-    {
-      indice: "sieteb",
-      name: "CORONA",
-      descripcion: "CORONA",
-      precio: "$ 6.9",
-      precioNum: 6900,
-    },
+    // {
+    //   indice: "seisb",
+    //   name: "CORONITA",
+    //   descripcion: "CORONITA",
+    //   precio: "$ 5.9",
+    //   precioNum: 5900,
+    // },
+    // {
+    //   indice: "sieteb",
+    //   name: "CORONA",
+    //   descripcion: "CORONA",
+    //   precio: "$ 6.9",
+    //   precioNum: 6900,
+    // },
     // {
     //   indice: "ochob",
     //   name: "BUDWEISER",
@@ -578,13 +578,13 @@ export const products = {
     //   precio: "$ 4.9",
     //   precioNum: 4900,
     // },
-    {
-      indice: "aguilaLi",
-      name: "AGUILA LIGTH <br> LITRO",
-      descripcion: "AGUILA LIGTH LITRO",
-      precio: "$ 8.9",
-      precioNum: 8900,
-    },
+    // {
+    //   indice: "aguilaLi",
+    //   name: "AGUILA LIGTH <br> LITRO",
+    //   descripcion: "AGUILA LIGTH LITRO",
+    //   precio: "$ 8.9",
+    //   precioNum: 8900,
+    // },
     // {
     //   indice: "diezb",
     //   name: "REDBULL",
