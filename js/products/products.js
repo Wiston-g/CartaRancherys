@@ -97,8 +97,8 @@ export const products = {
       name: "SALCHIPAPA LUCHO CRISPY",
       descripcion:
         "Lomitos de pollo apanado crispy, 340gr de papa en cascos, 200gr de salchicha tipo ranchera, 2 huevo cocinados, 60gr de queso costeño, 280gr de guiso de la casa a base de carne desmechada, pollo, tocineta, cebolla caramelizada y exclusivas salsas de la casa",
-      precio: "$ 31.9",
-      precioNum: 31900,
+      precio: "$ 41.9",
+      precioNum: 41900,
     },
   ],
   hamburguesas: [
@@ -436,15 +436,15 @@ export const products = {
       indice: "cuatroA",
       name: "JALAPEÑOS",
       descripcion: "JALAPEÑOS",
-      precio: "$ 2.5",
-      precioNum: 2500,
+      precio: "$ 1.9",
+      precioNum: 1900,
     },
     {
       indice: "cincoA",
       name: "PEPINILLOS",
       descripcion: "PEPINILLOS",
-      precio: "$ 2.5",
-      precioNum: 2500,
+      precio: "$ 1.9",
+      precioNum: 1900,
     },
     {
       indice: "seisA",
