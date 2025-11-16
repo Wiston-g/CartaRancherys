@@ -369,7 +369,7 @@ export const products = {
     {
       indice: "unopi",
       name: "CHULETICAS DE CERDO",
-      descripcion: "Chuletas de cerdo de cerdo de 200 gr, arepa antioqueña y salsa BBQ",
+      descripcion: "Chuletas de cerdo de cerdo de 200 gr, arepa antioqueña, queso y salsa BBQ",
       precio: "$ 13.9",
       precioNum: 12900,
     },
@@ -484,19 +484,19 @@ export const products = {
       precio: "$ 3.5",
       precioNum: 3500,
     },
-    // {
-    //   indice: "kolaP",
-    //   name: "KOLA ROMAN <br> PERSONAL 400 ML",
-    //   descripcion: "KOLA ROMAN PERSONAL 400 ML.",
-    //   precio: "$ 3.5",
-    //   precioNum: 3500,
-    // },
+    {
+      indice: "kolaP",
+      name: "Agua <br> pura Brisa 600 ML",
+      descripcion: "AGUA PURA BRISA 600 ML.",
+      precio: "$ 2.5",
+      precioNum: 2500,
+    },
     {
       indice: "tresb",
       name: "COCA COLA 1.5",
       descripcion: "COCA COLA 1.5",
-      precio: "$ 6.9",
-      precioNum: 6900,
+      precio: "$ 7.9",
+      precioNum: 7900,
     },
     {
       indice: "cuatrob",
